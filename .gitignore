@@ -10,4 +10,4 @@ out
 gen
 
 .gradle
-.idea
+application-oauth.properties
