@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.206s</div>
+<div class="counter">0.562s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,155 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Posts_등록된다"></a>
-<h3 class="failures">Posts_등록된다</h3>
-<span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[200 OK]&gt; but was:&lt;[302 FOUND]&gt;
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest.Posts_등록된다(PostsApiControllerTest.java:63)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="post수정된다"></a>
-<h3 class="failures">post수정된다</h3>
-<span class="code">
-<pre>org.junit.ComparisonFailure: expected:&lt;[200 OK]&gt; but was:&lt;[302 FOUND]&gt;
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest.post수정된다(PostsApiControllerTest.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -220,511 +78,102 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Posts_등록된다</td>
-<td class="failures">0.018s</td>
-<td class="failures">failed</td>
+<td class="success">Posts_등록된다</td>
+<td class="success">0.018s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">post수정된다</td>
-<td class="failures">0.188s</td>
-<td class="failures">failed</td>
+<td class="success">post수정된다</td>
+<td class="success">0.544s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-12-07 13:56:32.270 DEBUG 15190 --- [    Test worker] o.s.t.c.junit4.SpringJUnit4ClassRunner   : SpringJUnit4ClassRunner constructor called with [class kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.270 DEBUG 15190 --- [    Test worker] o.s.test.context.BootstrapUtils          : Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-2019-12-07 13:56:32.271 DEBUG 15190 --- [    Test worker] o.s.test.context.BootstrapUtils          : Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-2019-12-07 13:56:32.271 DEBUG 15190 --- [    Test worker] o.s.test.context.BootstrapUtils          : Instantiating TestContextBootstrapper for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-2019-12-07 13:56:32.271  INFO 15190 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest], using SpringBootContextLoader
-2019-12-07 13:56:32.272 DEBUG 15190 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Did not detect default resource location for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: class path resource [kr/gracelove/jojoldu/springboot/web/PostsApiControllerTest-context.xml] does not exist
-2019-12-07 13:56:32.272 DEBUG 15190 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Did not detect default resource location for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: class path resource [kr/gracelove/jojoldu/springboot/web/PostsApiControllerTestContext.groovy] does not exist
-2019-12-07 13:56:32.272  INFO 15190 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-12-07 13:56:32.272  INFO 15190 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2019-12-07 13:56:32.273 DEBUG 15190 --- [    Test worker] o.s.t.c.support.ActiveProfilesUtils      : Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.274  INFO 15190 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration kr.gracelove.jojoldu.springboot.Application for test class kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest
-2019-12-07 13:56:32.275 DEBUG 15190 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : @TestExecutionListeners is not present for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: using defaults.
-2019-12-07 13:56:32.275  INFO 15190 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-12-07 13:56:32.275  INFO 15190 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58be6cb7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4973489f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69337116, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@13279483, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38578984, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6b3309a1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19fa7e10, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@36d67220, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3249d6d7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@41c4af3e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@b0443e8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@e4677da]
-2019-12-07 13:56:32.276 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.276 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.276 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.276 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.276 DEBUG 15190 --- [    Test worker] tractDirtiesContextTestExecutionListener : Before test class: context [DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-2019-12-07 13:56:32.277 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.277 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.277 DEBUG 15190 --- [    Test worker] DependencyInjectionTestExecutionListener : Performing dependency injection for test context [[DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@3fae01aa, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
-2019-12-07 13:56:32.278 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.279 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
-2019-12-07 13:56:32.280 DEBUG 15190 --- [    Test worker] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'local.server.port' in PropertySource 'server.ports' with value of type Integer
-2019-12-07 13:56:32.280 DEBUG 15190 --- [    Test worker] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'local.server.port' in PropertySource 'environmentProperties' with value of type String
-2019-12-07 13:56:32.283 DEBUG 15190 --- [    Test worker] tractDirtiesContextTestExecutionListener : Before test method: context [DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@3fae01aa, testMethod = post수정된다@PostsApiControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-2019-12-07 13:56:32.284 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.284 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
-2019-12-07 13:56:32.285 DEBUG 15190 --- [    Test worker] stomAnnotationTransactionAttributeSource : Adding transactional method 'save' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2019-12-07 13:56:32.286 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2019-12-07 13:56:32.286 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(21970671&lt;open&gt;)] for JPA transaction
-2019-12-07 13:56:32.286 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-12-07 13:56:32.286 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : begin
-2019-12-07 13:56:32.286 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@26226e68]
-2019-12-07 13:56:32.328 DEBUG 15190 --- [    Test worker] o.s.data.auditing.AuditingHandler        : Touched kr.gracelove.jojoldu.springboot.domain.posts.Posts@1aaf9cac - Last modification at 2019-12-07T13:56:32.324045 by unknown
-2019-12-07 13:56:32.338 DEBUG 15190 --- [    Test worker] org.hibernate.engine.spi.ActionQueue     : Executing identity-insert immediately
-2019-12-07 13:56:32.343 DEBUG 15190 --- [    Test worker] org.hibernate.SQL                        : insert into posts (id, created_date, modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
-Hibernate: insert into posts (id, created_date, modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
-2019-12-07 13:56:32.349 DEBUG 15190 --- [    Test worker] o.h.id.IdentifierGeneratorHelper         : Natively generated identity: 1
-2019-12-07 13:56:32.350 DEBUG 15190 --- [    Test worker] o.h.r.j.i.ResourceRegistryStandardImpl   : HHH000387: ResultSet's statement was not registered
-2019-12-07 13:56:32.352 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2019-12-07 13:56:32.352 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(21970671&lt;open&gt;)]
-2019-12-07 13:56:32.352 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : committing
-2019-12-07 13:56:32.353 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
-2019-12-07 13:56:32.353 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
-2019-12-07 13:56:32.355 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
-2019-12-07 13:56:32.356 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-2019-12-07 13:56:32.357 DEBUG 15190 --- [    Test worker] o.hibernate.internal.util.EntityPrinter  : Listing entities:
-2019-12-07 13:56:32.358 DEBUG 15190 --- [    Test worker] o.hibernate.internal.util.EntityPrinter  : kr.gracelove.jojoldu.springboot.domain.posts.Posts{createdDate=2019-12-07T13:56:32.324045, author=author, modifiedDate=2019-12-07T13:56:32.324045, id=1, title=title, content=content}
-2019-12-07 13:56:32.359 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(21970671&lt;open&gt;)] after transaction
-2019-12-07 13:56:32.361 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:56004/api/v1/posts/1
-2019-12-07 13:56:32.369 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2019-12-07 13:56:32.397 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : Writing [kr.gracelove.jojoldu.springboot.web.dto.PostsUpdateRequestDto@573e0792] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-12-07 13:56:32.407 DEBUG 15190 --- [    Test worker] s.n.www.protocol.http.HttpURLConnection  : sun.net.www.MessageHeader@6e13cac17 pairs: {PUT /api/v1/posts/1 HTTP/1.1: null}{Accept: application/json, application/*+json}{Content-Type: application/json;charset=UTF-8}{User-Agent: Java/11.0.4}{Host: localhost:56004}{Connection: keep-alive}{Content-Length: 51}
-2019-12-07 13:56:32.407 DEBUG 15190 --- [o-auto-1-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read from buffer: [0]
-2019-12-07 13:56:32.408 DEBUG 15190 --- [o-auto-1-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read direct from socket: [216]
-2019-12-07 13:56:32.408 DEBUG 15190 --- [o-auto-1-exec-2] o.a.coyote.http11.Http11InputBuffer      : Received [PUT /api/v1/posts/1 HTTP/1.1
-Accept: application/json, application/*+json
-Content-Type: application/json;charset=UTF-8
-User-Agent: Java/11.0.4
-Host: localhost:56004
-Connection: keep-alive
-Content-Length: 51
+<pre>14:04:16.718 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.727 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:04:16.734 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:04:16.753 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+14:04:16.762 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest], using SpringBootContextLoader
+14:04:16.765 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: class path resource [kr/gracelove/jojoldu/springboot/web/PostsApiControllerTest-context.xml] does not exist
+14:04:16.766 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: class path resource [kr/gracelove/jojoldu/springboot/web/PostsApiControllerTestContext.groovy] does not exist
+14:04:16.766 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:04:16.767 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:04:16.816 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.880 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/govlmo91/IdeaProjects/jojoldubook/build/classes/java/main/kr/gracelove/jojoldu/springboot/Application.class]
+14:04:16.881 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration kr.gracelove.jojoldu.springboot.Application for test class kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest
+14:04:16.957 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]: using defaults.
+14:04:16.958 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+14:04:16.973 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2a529aff, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@550086cd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@79e6e565, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72205626, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c1bafff, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1dfc7e5f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@537f6d48, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@231e8067, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@32ebb7ac, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4c9b2928, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@64a608de, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@336cb195, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5cd53683, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49129658]
+14:04:16.975 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.976 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.977 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.977 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.984 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5c407e42 testClass = PostsApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1c0ca5ff testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@182d97e4, [ImportsContextCustomizer@11fe6aac key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@37daa649, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3974262c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1d3691ff], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+14:04:16.985 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.985 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
+14:04:16.990 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@5c407e42 testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@220bf0b5, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1c0ca5ff testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@182d97e4, [ImportsContextCustomizer@11fe6aac key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@37daa649, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3974262c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1d3691ff], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+14:04:17.006 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
 
-]
-2019-12-07 13:56:32.408 DEBUG 15190 --- [o-auto-1-exec-2] o.a.c.authenticator.AuthenticatorBase    : Security checking request PUT /api/v1/posts/1
-2019-12-07 13:56:32.408 DEBUG 15190 --- [o-auto-1-exec-2] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
-2019-12-07 13:56:32.408 DEBUG 15190 --- [o-auto-1-exec-2] o.a.c.authenticator.AuthenticatorBase    :  Not subject to any constraint
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 1 of 14 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 2 of 14 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 3 of 14 in additional filter chain; firing Filter: 'HeaderWriterFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 4 of 14 in additional filter chain; firing Filter: 'LogoutFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /api/v1/posts/1' doesn't match 'GET /logout'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /api/v1/posts/1' doesn't match 'POST /logout'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/logout'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /api/v1/posts/1' doesn't match 'DELETE /logout'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 5 of 14 in additional filter chain; firing Filter: 'OAuth2AuthorizationRequestRedirectFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/oauth2/authorization/{registrationId}'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 6 of 14 in additional filter chain; firing Filter: 'OAuth2LoginAuthenticationFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/login/oauth2/code/*'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 7 of 14 in additional filter chain; firing Filter: 'DefaultLoginPageGeneratingFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 8 of 14 in additional filter chain; firing Filter: 'DefaultLogoutPageGeneratingFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'PUT /api/v1/posts/1' doesn't match 'GET /logout'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 9 of 14 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
-2019-12-07 13:56:32.409 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 10 of 14 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 11 of 14 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@c1a1e371: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 12 of 14 in additional filter chain; firing Filter: 'SessionManagementFilter'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 13 of 14 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.security.web.FilterChainProxy        : /api/v1/posts/1 at position 14 of 14 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/css/**'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/images/**'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/js/**'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/h2-console/**'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/api/v1/**'
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/v1/posts/1; Attributes: [hasRole('ROLE_USER')]
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@c1a1e371: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
-2019-12-07 13:56:32.410 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@a1e11b7, returned: -1
-2019-12-07 13:56:32.412 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
 
-org.springframework.security.access.AccessDeniedException: Access is denied
-	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:52) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:206) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:160) ~[spring-security-oauth2-client-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151) ~[spring-session-core-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:86) ~[spring-session-core-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2019-12-07 13:56:32.416 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.*']]
-2019-12-07 13:56:32.416 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts/1'; against '/**/favicon.*'
-2019-12-07 13:56:32.416 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
-2019-12-07 13:56:32.416 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@19ef4731, matchingMediaTypes=[application/json], useEquals=false, ignoredMediaTypes=[*/*]]]
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : httpRequestMediaTypes=[application/json, application/*+json]
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing application/json
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith application/json = true
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = false
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Did not match
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Request not saved as configured RequestMatcher did not match
-2019-12-07 13:56:32.417 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
-2019-12-07 13:56:32.418 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:56004/login'
-2019-12-07 13:56:32.418 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2ff579c2
-2019-12-07 13:56:32.418 DEBUG 15190 --- [o-auto-1-exec-2] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.418 DEBUG 15190 --- [o-auto-1-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-2019-12-07 13:56:32.419 DEBUG 15190 --- [o-auto-1-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
-2019-12-07 13:56:32.419 DEBUG 15190 --- [o-auto-1-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read from buffer: [0]
-2019-12-07 13:56:32.419 DEBUG 15190 --- [    Test worker] s.n.www.protocol.http.HttpURLConnection  : sun.net.www.MessageHeader@3756e9a59 pairs: {null: HTTP/1.1 302}{X-Content-Type-Options: nosniff}{X-XSS-Protection: 1; mode=block}{Cache-Control: no-cache, no-store, max-age=0, must-revalidate}{Pragma: no-cache}{Expires: 0}{Location: http://localhost:56004/login}{Content-Length: 0}{Date: Sat, 07 Dec 2019 04:56:32 GMT}
-2019-12-07 13:56:32.420 DEBUG 15190 --- [o-auto-1-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read direct from socket: [51]
-2019-12-07 13:56:32.420 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : Response 302 FOUND
-2019-12-07 13:56:32.420 DEBUG 15190 --- [o-auto-1-exec-2] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read from buffer: [0]
-2019-12-07 13:56:32.420 DEBUG 15190 --- [o-auto-1-exec-2] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read direct from socket: [0]
-2019-12-07 13:56:32.420 DEBUG 15190 --- [o-auto-1-exec-2] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Status in: [OPEN_READ], State out: [OPEN]
-2019-12-07 13:56:32.434 DEBUG 15190 --- [    Test worker] stomAnnotationTransactionAttributeSource : Adding transactional method 'deleteAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2019-12-07 13:56:32.434 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2019-12-07 13:56:32.434 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1183643795&lt;open&gt;)] for JPA transaction
-2019-12-07 13:56:32.434 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-12-07 13:56:32.434 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : begin
-2019-12-07 13:56:32.434 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@475a3908]
-2019-12-07 13:56:32.436 DEBUG 15190 --- [    Test worker] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -&gt; select generatedAlias0 from Posts as generatedAlias0
-2019-12-07 13:56:32.437 DEBUG 15190 --- [    Test worker] o.h.h.internal.ast.QueryTranslatorImpl   : parse() - HQL: select generatedAlias0 from kr.gracelove.jojoldu.springboot.domain.posts.Posts as generatedAlias0
-2019-12-07 13:56:32.438 DEBUG 15190 --- [    Test worker] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
-2019-12-07 13:56:32.438 DEBUG 15190 --- [    Test worker] o.h.h.internal.ast.QueryTranslatorImpl   : --- HQL AST ---
- \-[QUERY] Node: 'query'
-    \-[SELECT_FROM] Node: 'SELECT_FROM'
-       +-[FROM] Node: 'from'
-       |  \-[RANGE] Node: 'RANGE'
-       |     +-[DOT] Node: '.'
-       |     |  +-[DOT] Node: '.'
-       |     |  |  +-[DOT] Node: '.'
-       |     |  |  |  +-[DOT] Node: '.'
-       |     |  |  |  |  +-[DOT] Node: '.'
-       |     |  |  |  |  |  +-[DOT] Node: '.'
-       |     |  |  |  |  |  |  +-[IDENT] Node: 'kr'
-       |     |  |  |  |  |  |  \-[IDENT] Node: 'gracelove'
-       |     |  |  |  |  |  \-[IDENT] Node: 'jojoldu'
-       |     |  |  |  |  \-[IDENT] Node: 'springboot'
-       |     |  |  |  \-[IDENT] Node: 'domain'
-       |     |  |  \-[IDENT] Node: 'posts'
-       |     |  \-[IDENT] Node: 'Posts'
-       |     \-[ALIAS] Node: 'generatedAlias0'
-       \-[SELECT] Node: 'select'
-          \-[IDENT] Node: 'generatedAlias0'
-
-2019-12-07 13:56:32.439 DEBUG 15190 --- [    Test worker] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select &lt;&lt; begin [level=1, statement=select]
-2019-12-07 13:56:32.439 DEBUG 15190 --- [    Test worker] o.h.hql.internal.ast.tree.FromElement    : FromClause{level=1} : kr.gracelove.jojoldu.springboot.domain.posts.Posts (generatedAlias0) -&gt; posts0_
-2019-12-07 13:56:32.439 DEBUG 15190 --- [    Test worker] o.h.h.i.ast.tree.FromReferenceNode       : Resolved : generatedAlias0 -&gt; posts0_.id
-2019-12-07 13:56:32.439 DEBUG 15190 --- [    Test worker] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select : finishing up [level=1, statement=select]
-2019-12-07 13:56:32.439 DEBUG 15190 --- [    Test worker] o.h.hql.internal.ast.HqlSqlWalker        : processQuery() :  ( SELECT ( {select clause} posts0_.id ) ( FromClause{level=1} posts posts0_ ) )
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.hql.internal.ast.util.JoinProcessor  : Using FROM fragment [posts posts0_]
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.hql.internal.antlr.HqlSqlBaseWalker  : select &gt;&gt; end [level=1, statement=select]
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.h.internal.ast.QueryTranslatorImpl   : --- SQL AST ---
- \-[SELECT] QueryNode: 'SELECT'  querySpaces (posts)
-    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
-    |  +-[ALIAS_REF] IdentNode: 'posts0_.id as id1_0_' {alias=generatedAlias0, className=kr.gracelove.jojoldu.springboot.domain.posts.Posts, tableAlias=posts0_}
-    |  \-[SQL_TOKEN] SqlFragment: 'posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_'
-    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[posts0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
-       \-[FROM_FRAGMENT] FromElement: 'posts posts0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=posts,tableAlias=posts0_,origin=null,columns={,className=kr.gracelove.jojoldu.springboot.domain.posts.Posts}}
-
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.h.internal.ast.QueryTranslatorImpl   : HQL: select generatedAlias0 from kr.gracelove.jojoldu.springboot.domain.posts.Posts as generatedAlias0
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.h.internal.ast.QueryTranslatorImpl   : SQL: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2019-12-07 13:56:32.440 DEBUG 15190 --- [    Test worker] o.h.hql.internal.ast.ErrorTracker        : throwQueryException() : no errors
-2019-12-07 13:56:32.445 DEBUG 15190 --- [    Test worker] org.hibernate.SQL                        : select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+2019-12-07 14:04:17.389  INFO 15705 --- [    Test worker] k.g.j.s.web.PostsApiControllerTest       : Starting PostsApiControllerTest on govlmo91ui-MacBookPro.local with PID 15705 (started by govlmo91 in /Users/govlmo91/IdeaProjects/jojoldubook)
+2019-12-07 14:04:17.390  INFO 15705 --- [    Test worker] k.g.j.s.web.PostsApiControllerTest       : No active profile set, falling back to default profiles: default
+2019-12-07 14:04:18.093  INFO 15705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-07 14:04:18.163  INFO 15705 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 2 repository interfaces.
+2019-12-07 14:04:18.703  INFO 15705 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a10fe9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-07 14:04:19.060  INFO 15705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2019-12-07 14:04:19.091  INFO 15705 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-07 14:04:19.091  INFO 15705 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-12-07 14:04:19.235  INFO 15705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-07 14:04:19.236  INFO 15705 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1832 ms
+2019-12-07 14:04:19.525  INFO 15705 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-07 14:04:19.687  INFO 15705 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-07 14:04:19.783  INFO 15705 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-07 14:04:19.849  INFO 15705 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-12-07 14:04:19.850  INFO 15705 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-07 14:04:20.001  INFO 15705 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-07 14:04:20.138  INFO 15705 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+Hibernate: drop table if exists posts
+Hibernate: drop table if exists user
+Hibernate: create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
+Hibernate: create table user (id bigint not null auto_increment, created_date datetime, modified_date datetime, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id)) engine=InnoDB
+2019-12-07 14:04:20.786  INFO 15705 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@34b817d0'
+2019-12-07 14:04:20.789  INFO 15705 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-07 14:04:21.406  INFO 15705 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-07 14:04:21.753  INFO 15705 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d7744ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@7efce63, org.springframework.security.web.header.HeaderWriterFilter@6b204ed6, org.springframework.security.web.authentication.logout.LogoutFilter@3af700f3, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@660b44e5, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1aa2edc0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e40cbbe, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@d1091ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6119ed66, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69dd247, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6459d3e0, org.springframework.security.web.session.SessionManagementFilter@2d6cdde8, org.springframework.security.web.access.ExceptionTranslationFilter@7af1e846, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@142d9dc0]
+2019-12-07 14:04:22.071  INFO 15705 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-07 14:04:22.124  WARN 15705 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-07 14:04:22.170  INFO 15705 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-07 14:04:22.480  INFO 15705 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2019-12-07 14:04:22.481  INFO 15705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-07 14:04:22.493  INFO 15705 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 12 ms
+2019-12-07 14:04:22.528  INFO 15705 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-12-07 14:04:22.552  INFO 15705 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56087 (http) with context path ''
+2019-12-07 14:04:22.555  INFO 15705 --- [    Test worker] k.g.j.s.web.PostsApiControllerTest       : Started PostsApiControllerTest in 5.546 seconds (JVM running for 6.524)
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2019-12-07 14:04:22.851  INFO 15705 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-07 14:04:22.851  INFO 15705 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-07 14:04:22.855  INFO 15705 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+Hibernate: update posts set created_date=?, modified_date=?, author=?, content=?, title=? where id=?
 Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2019-12-07 13:56:32.446 DEBUG 15190 --- [    Test worker] org.hibernate.loader.Loader              : Result set row: 0
-2019-12-07 13:56:32.449 DEBUG 15190 --- [    Test worker] org.hibernate.loader.Loader              : Result row: EntityKey[kr.gracelove.jojoldu.springboot.domain.posts.Posts#1]
-2019-12-07 13:56:32.452 DEBUG 15190 --- [    Test worker] o.h.engine.internal.TwoPhaseLoad         : Resolving associations for [kr.gracelove.jojoldu.springboot.domain.posts.Posts#1]
-2019-12-07 13:56:32.452 DEBUG 15190 --- [    Test worker] o.h.engine.internal.TwoPhaseLoad         : Done materializing entity [kr.gracelove.jojoldu.springboot.domain.posts.Posts#1]
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1183643795&lt;open&gt;)]
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : committing
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Processing flush-time cascades
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Dirty checking collections
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
-2019-12-07 13:56:32.456 DEBUG 15190 --- [    Test worker] o.h.e.i.AbstractFlushingEventListener    : Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
-2019-12-07 13:56:32.457 DEBUG 15190 --- [    Test worker] o.hibernate.internal.util.EntityPrinter  : Listing entities:
-2019-12-07 13:56:32.457 DEBUG 15190 --- [    Test worker] o.hibernate.internal.util.EntityPrinter  : kr.gracelove.jojoldu.springboot.domain.posts.Posts{createdDate=2019-12-07T13:56:32.324045, author=author, modifiedDate=2019-12-07T13:56:32.324045, id=1, title=title, content=content}
-2019-12-07 13:56:32.463 DEBUG 15190 --- [    Test worker] org.hibernate.SQL                        : delete from posts where id=?
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
 Hibernate: delete from posts where id=?
-2019-12-07 13:56:32.466 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1183643795&lt;open&gt;)] after transaction
-2019-12-07 13:56:32.466 DEBUG 15190 --- [    Test worker] o.h.e.jdbc.internal.JdbcCoordinatorImpl  : HHH000420: Closing un-released batch
-2019-12-07 13:56:32.466 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.466 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
-2019-12-07 13:56:32.467 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.467 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
-2019-12-07 13:56:32.467 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.467 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
-2019-12-07 13:56:32.467 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.467 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
-2019-12-07 13:56:32.469 DEBUG 15190 --- [    Test worker] tractDirtiesContextTestExecutionListener : After test method: context [DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@3fae01aa, testMethod = post수정된다@PostsApiControllerTest, testException = org.junit.ComparisonFailure: expected:&lt;[200 OK]&gt; but was:&lt;[302 FOUND]&gt;, mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-2019-12-07 13:56:32.471 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved @ProfileValueSourceConfiguration [null] for test class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.471 DEBUG 15190 --- [    Test worker] o.s.test.annotation.ProfileValueUtils    : Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest]
-2019-12-07 13:56:32.471 DEBUG 15190 --- [    Test worker] DependencyInjectionTestExecutionListener : Performing dependency injection for test context [[DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@939a313, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
-2019-12-07 13:56:32.472 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.472 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
-2019-12-07 13:56:32.472 DEBUG 15190 --- [    Test worker] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'local.server.port' in PropertySource 'server.ports' with value of type Integer
-2019-12-07 13:56:32.472 DEBUG 15190 --- [    Test worker] o.s.c.e.PropertySourcesPropertyResolver  : Found key 'local.server.port' in PropertySource 'environmentProperties' with value of type String
-2019-12-07 13:56:32.472 DEBUG 15190 --- [    Test worker] tractDirtiesContextTestExecutionListener : Before test method: context [DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@939a313, testMethod = Posts_등록된다@PostsApiControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-2019-12-07 13:56:32.473 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.473 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
-2019-12-07 13:56:32.474 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : HTTP POST http://localhost:56004/api/v1/posts
-2019-12-07 13:56:32.474 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
-2019-12-07 13:56:32.476 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : Writing [kr.gracelove.jojoldu.springboot.web.dto.PostsSaveRequestDto@4fc2e190] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-2019-12-07 13:56:32.477 DEBUG 15190 --- [    Test worker] s.n.www.protocol.http.HttpURLConnection  : sun.net.www.MessageHeader@533511bf7 pairs: {POST /api/v1/posts HTTP/1.1: null}{Accept: application/json, application/*+json}{Content-Type: application/json;charset=UTF-8}{User-Agent: Java/11.0.4}{Host: localhost:56004}{Connection: keep-alive}{Content-Length: 55}
-2019-12-07 13:56:32.478 DEBUG 15190 --- [o-auto-1-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read from buffer: [0]
-2019-12-07 13:56:32.478 DEBUG 15190 --- [o-auto-1-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read direct from socket: [270]
-2019-12-07 13:56:32.478 DEBUG 15190 --- [o-auto-1-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [POST /api/v1/posts HTTP/1.1
-Accept: application/json, application/*+json
-Content-Type: application/json;charset=UTF-8
-User-Agent: Java/11.0.4
-Host: localhost:56004
-Connection: keep-alive
-Content-Length: 55
-
-{&quot;title&quot;:&quot;title&quot;,&quot;content&quot;:&quot;content&quot;,&quot;author&quot;:&quot;author&quot;}]
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.a.c.authenticator.AuthenticatorBase    : Security checking request POST /api/v1/posts
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.a.c.authenticator.AuthenticatorBase    :  Not subject to any constraint
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 1 of 14 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 2 of 14 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 3 of 14 in additional filter chain; firing Filter: 'HeaderWriterFilter'
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 4 of 14 in additional filter chain; firing Filter: 'LogoutFilter'
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', GET]
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/v1/posts' doesn't match 'GET /logout'
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', POST]
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/logout'
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', PUT]
-2019-12-07 13:56:32.479 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/v1/posts' doesn't match 'PUT /logout'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : Trying to match using Ant [pattern='/logout', DELETE]
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/v1/posts' doesn't match 'DELETE /logout'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.web.util.matcher.OrRequestMatcher  : No matches found
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 5 of 14 in additional filter chain; firing Filter: 'OAuth2AuthorizationRequestRedirectFilter'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/oauth2/authorization/{registrationId}'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 6 of 14 in additional filter chain; firing Filter: 'OAuth2LoginAuthenticationFilter'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/login/oauth2/code/*'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 7 of 14 in additional filter chain; firing Filter: 'DefaultLoginPageGeneratingFilter'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 8 of 14 in additional filter chain; firing Filter: 'DefaultLogoutPageGeneratingFilter'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'POST /api/v1/posts' doesn't match 'GET /logout'
-2019-12-07 13:56:32.480 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 9 of 14 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 10 of 14 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 11 of 14 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@c1a1e371: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 12 of 14 in additional filter chain; firing Filter: 'SessionManagementFilter'
-2019-12-07 13:56:32.481 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 13 of 14 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.security.web.FilterChainProxy        : /api/v1/posts at position 14 of 14 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/css/**'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/images/**'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/js/**'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/h2-console/**'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/api/v1/**'
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /api/v1/posts; Attributes: [hasRole('ROLE_USER')]
-2019-12-07 13:56:32.482 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@c1a1e371: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@957e: RemoteIpAddress: 127.0.0.1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
-2019-12-07 13:56:32.483 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@a1e11b7, returned: -1
-2019-12-07 13:56:32.484 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
-
-org.springframework.security.access.AccessDeniedException: Access is denied
-	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:52) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:206) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:160) ~[spring-security-oauth2-client-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151) ~[spring-session-core-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:86) ~[spring-session-core-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.22.jar:9.0.22]
-	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
-
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.*']]
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/api/v1/posts'; against '/**/favicon.*'
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = true
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@19ef4731, matchingMediaTypes=[application/json], useEquals=false, ignoredMediaTypes=[*/*]]]
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.m.MediaTypeRequestMatcher      : httpRequestMediaTypes=[application/json, application/*+json]
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.m.MediaTypeRequestMatcher      : Processing application/json
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.m.MediaTypeRequestMatcher      : application/json .isCompatibleWith application/json = true
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = false
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.util.matcher.AndRequestMatcher   : Did not match
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Request not saved as configured RequestMatcher did not match
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:56004/login'
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@2ff579c2
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] o.s.s.w.h.S.SESSION_LOGGER               : No session found by id: Caching result for getSession(false) for this HttpServletRequest.
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
-2019-12-07 13:56:32.485 DEBUG 15190 --- [o-auto-1-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
-2019-12-07 13:56:32.486 DEBUG 15190 --- [    Test worker] s.n.www.protocol.http.HttpURLConnection  : sun.net.www.MessageHeader@b23b4289 pairs: {null: HTTP/1.1 302}{X-Content-Type-Options: nosniff}{X-XSS-Protection: 1; mode=block}{Cache-Control: no-cache, no-store, max-age=0, must-revalidate}{Pragma: no-cache}{Expires: 0}{Location: http://localhost:56004/login}{Content-Length: 0}{Date: Sat, 07 Dec 2019 04:56:32 GMT}
-2019-12-07 13:56:32.486 DEBUG 15190 --- [o-auto-1-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read from buffer: [0]
-2019-12-07 13:56:32.486 DEBUG 15190 --- [    Test worker] o.s.web.client.RestTemplate              : Response 302 FOUND
-2019-12-07 13:56:32.486 DEBUG 15190 --- [o-auto-1-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Read direct from socket: [0]
-2019-12-07 13:56:32.486 DEBUG 15190 --- [o-auto-1-exec-3] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@6000174e:org.apache.tomcat.util.net.NioChannel@7785449b:java.nio.channels.SocketChannel[connected local=/127.0.0.1:56004 remote=/127.0.0.1:56005]], Status in: [OPEN_READ], State out: [OPEN]
-2019-12-07 13:56:32.487 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
-2019-12-07 13:56:32.487 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Opened new EntityManager [SessionImpl(1059222254&lt;open&gt;)] for JPA transaction
-2019-12-07 13:56:32.487 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
-2019-12-07 13:56:32.487 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : begin
-2019-12-07 13:56:32.487 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@107f828d]
-2019-12-07 13:56:32.487 DEBUG 15190 --- [    Test worker] o.h.q.c.internal.CriteriaQueryImpl       : Rendered criteria query -&gt; select generatedAlias0 from Posts as generatedAlias0
-2019-12-07 13:56:32.488 DEBUG 15190 --- [    Test worker] org.hibernate.SQL                        : select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
 Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
-2019-12-07 13:56:32.488 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
-2019-12-07 13:56:32.488 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1059222254&lt;open&gt;)]
-2019-12-07 13:56:32.488 DEBUG 15190 --- [    Test worker] o.h.e.t.internal.TransactionImpl         : committing
-2019-12-07 13:56:32.488 DEBUG 15190 --- [    Test worker] o.s.orm.jpa.JpaTransactionManager        : Closing JPA EntityManager [SessionImpl(1059222254&lt;open&gt;)] after transaction
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] c.DefaultCacheAwareContextLoaderDelegate : Retrieved ApplicationContext from cache with key [[WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]
-2019-12-07 13:56:32.489 DEBUG 15190 --- [    Test worker] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@1e7bd3ac size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
-2019-12-07 13:56:32.491 DEBUG 15190 --- [    Test worker] tractDirtiesContextTestExecutionListener : After test method: context [DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = kr.gracelove.jojoldu.springboot.web.PostsApiControllerTest@939a313, testMethod = Posts_등록된다@PostsApiControllerTest, testException = org.junit.ComparisonFailure: expected:&lt;[200 OK]&gt; but was:&lt;[302 FOUND]&gt;, mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
-2019-12-07 13:56:32.491 DEBUG 15190 --- [    Test worker] tractDirtiesContextTestExecutionListener : After test class: context [DefaultTestContext@72c5e7ab testClass = PostsApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@169c0b92 testClass = PostsApiControllerTest, locations = '{}', classes = '{class kr.gracelove.jojoldu.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4e536a8f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1bdccf26, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@640f81a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3c4f1c14], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: delete from posts where id=?
 </pre>
 </span>
 </div>
@@ -736,7 +185,7 @@ Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, po
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2019. 12. 7. 오후 1:56:33</p>
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2019. 12. 7. 오후 2:04:25</p>
 </div>
 </div>
 </body>
