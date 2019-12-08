@@ -36,8 +36,8 @@ deploy:
     bucket: aws-practice-build
     key: jojoldubookbygrace.zip
     bundle_type: zip
-    application: jojoldubook-by-grace
-    deployment_group: jojoldubook-group
+    application: aws-practice
+    deployment_group: aws-practice-group
     region: ap-northeast-2
     wait-until-deployed: true
 
