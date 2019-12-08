@@ -37,7 +37,7 @@ deploy:
     key: jojoldubookbygrace.zip
     bundle_type: zip
     application: aws-practice
-    deployment_group: aws-practice-group
+    deployment_group: springboot-practice
     region: ap-northeast-2
     wait-until-deployed: true
 
