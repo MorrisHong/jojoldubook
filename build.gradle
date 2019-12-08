@@ -26,7 +26,6 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-web')
