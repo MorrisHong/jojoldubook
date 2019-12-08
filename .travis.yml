@@ -35,6 +35,7 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     bucket: aws-practice-build
     key: jojoldubookbygrace.zip
+    bundle_type: zip
     application: jojoldubook-by-grace
     deployment_group: jojoldubook-group
     region: ap-northeast-2
